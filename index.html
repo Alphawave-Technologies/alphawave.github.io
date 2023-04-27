@@ -1,33 +1,57 @@
-<!--<!DOCTYPE html>
-<html>
-<body style="background-color:rgb(0, 0, 0);text-align:center">
-<h1 style="color:rgb(255, 255, 255);"> A L P H A W A V E</h1>
-</body>
-</html>-->
+<!DOCTYPE html>
 
 <html>
-    <link href="site-style.css" rel="stylesheet">
 
-    <a href="#"><img src="https://raw.githubusercontent.com/Alphawave-Technologies/alphawave.github.io/main/AW_Logo.png"></a>
+  <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+  </video>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <nav class = "navigation">
+    <ul-1 id="navbar">
+      <li>
+        <a class = "active" id= "logo" href="#home">
+          <img src="https://raw.githubusercontent.com/Alphawave-Technologies/alphawave.github.io/main/AW_Logo.png">
+        </a>
+      </li>
+
+      <li><a  id = "soc-contents" href="https://www.instagram.com/get.alphawave/?igshid=YmMyMTA2M2Y%3D">Instagram</a></li>
+      <li><a  id = "soc-contents" href="https://twitter.com/getalphawave">Twitter</a></li>
+      <li><a  id = "soc-contents" href="https://www.tiktok.com/@get.alphawave?is_from_webapp=1&sender_device=pc">Tiktok</a></li>
+
+    </ul-1>
+
+    <script>
+      window.onscroll = () => {
+      const nav = document.querySelector('#navbar');
+      if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+      };
+
+    </script>
+  </nav>  
+
+  <body>
     
-    <ul>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Our Story</a></li>
-    <li><a href="#">Contact</a></li>
-    </ul> 
+    <div class="main" id="home">
+      <link href="site-style.css" rel="stylesheet">
     
-    <h1>A L P H A W A V E</h1>
-    <h3>The World's First Dynamic Color-Changing Smart Shoes</h3>
-    
-    <button>Join our newsletter!</button>
-    <button class="b2">Buy now!</button>
-    
-    
-    <svg viewBox="0 0 320 512" width="20" title="angle-down">
-      <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
-    </svg>
-      
+        <h1>A L P H A W A V E</h1>
+        <h3>The World's First Dynamic Color-Changing Smart Shoes</h3>
+
+        <form action = "temp-form.html">
+          <button class="b1" type = "submit">Join our network</button>
+        </form>
+
     </div>
-     </div>
+
+  </body>
+
+  <footer>
+    <p>Alphawave Technologies © 2023. All rights reserved. </p>
+  </footer>
+
 </html>
 
